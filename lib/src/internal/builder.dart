@@ -91,10 +91,12 @@ class DefaultMvcAppBuilder extends ServiceCollection implements MvcAppBuilder {
   Object _address = InternetAddress.anyIPv4;
   int _port = 8080;
 
+  @override
   void useAddress(Object address) {
     _address = address;
   }
 
+  @override
   void usePort(int port) {
     _port = port;
   }

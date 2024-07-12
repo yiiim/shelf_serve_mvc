@@ -10,5 +10,7 @@ abstract class MvcAppBuilder extends ServiceCollection {
 
   void addController<T extends MvcController>(String prefix, T Function() create);
   void addMiddleware<T extends MvcMiddleware>(T Function() create);
+  void useAddress(Object address);
+  void usePort(int port);
   Future<MvcApp> buildApp();
 }

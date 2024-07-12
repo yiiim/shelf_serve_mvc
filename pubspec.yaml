@@ -1,6 +1,6 @@
 name: shelf_serve_mvc
 description: A simple MVC framework for shelf.
-version: 1.0.0-dev.1
+version: 1.0.0-dev.2
 repository:  https://github.com/yiiim/shelf_serve_mvc
 
 environment:
