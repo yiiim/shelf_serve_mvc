@@ -116,6 +116,7 @@ class DefaultMvcAppBuilder extends ServiceCollection implements MvcAppBuilder {
   @override
   Future<MvcApp> buildApp() async {
     addScopedSingleton<MvcRequestFieldParser>((_) => DefaultMvcRequestFieldParser());
+    addSingleton((_) => ShelfMvcAppEnvironment());
     addSingleton<MvcApp>(
       (container) => _DefaultShelfMvcApp(
         address: _address,
